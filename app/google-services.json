@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "819455094381",
+    "firebase_url": "https://izmirimqr-talatpasa.firebaseio.com",
+    "project_id": "izmirimqr-talatpasa",
+    "storage_bucket": "izmirimqr-talatpasa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819455094381:android:feff676d6b58bd7fc01964",
+        "android_client_info": {
+          "package_name": "webfirmam.app.talatpasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819455094381-fobij80ft7dh2229ncepf1toqmh9rq1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANCrQo_oZhVZQeje7BTwpS8NtNkLraxHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819455094381-fobij80ft7dh2229ncepf1toqmh9rq1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

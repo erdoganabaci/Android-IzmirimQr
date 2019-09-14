@@ -15,7 +15,7 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ActivityOne"
             android:screenOrientation="portrait" />
@@ -36,7 +36,9 @@
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
             tools:replace="android:screenOrientation" />
-        <activity android:name=".QrMenuActivity"></activity>
+        <activity android:name=".QrMenuActivity" />
+        <activity android:name=".MisafirYeniActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

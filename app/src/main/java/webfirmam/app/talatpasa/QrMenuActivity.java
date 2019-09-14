@@ -1,6 +1,7 @@
 package webfirmam.app.talatpasa;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -42,6 +43,8 @@ public class QrMenuActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position ==  0) {
                     Toast.makeText(QrMenuActivity.this, "Facebook Description", Toast.LENGTH_SHORT).show();
+                    Intent intentQR = new Intent(QrMenuActivity.this,MisafirYeniActivity.class);
+                    startActivity(intentQR);
                 }
                 if (position ==  1) {
                     Toast.makeText(QrMenuActivity.this, "Whatsapp Description", Toast.LENGTH_SHORT).show();

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">İzmirimKart QR TALATPASA</string>
+    <string name="input_error_name">İsim Zorunlu</string>
+    <string name="input_error_email">Email Zorunlu</string>
+    <string name="input_error_password">Şifre Zorunlu</string>
+    <string name="input_error_passwordAgain">Şifreler Uyuşmuyor</string>
+    <string name="input_error_phone">Telefon Zorunlu!</string>
+    <string name="input_error_password_length">Şifreniz 6 Karakterden Uzun Olmalı</string>
+    <string name="input_error_phone_invalid">Geçerli Telefon Numarası Giriniz!</string>
+    <string name="registration_success">Kayıt Başarılı</string>
+    <string name="input_error_email_invalid">Geçerli Mail Giriniz</string>
 </resources>
