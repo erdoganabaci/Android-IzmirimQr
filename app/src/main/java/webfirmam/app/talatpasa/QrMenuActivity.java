@@ -42,15 +42,17 @@ public class QrMenuActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position ==  0) {
-                    Toast.makeText(QrMenuActivity.this, "Facebook Description", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QrMenuActivity.this, "Misafir/Yeni Yolcu Üyelik İşlemleri", Toast.LENGTH_SHORT).show();
                     Intent intentQR = new Intent(QrMenuActivity.this,MisafirYeniActivity.class);
                     startActivity(intentQR);
                 }
                 if (position ==  1) {
-                    Toast.makeText(QrMenuActivity.this, "Whatsapp Description", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QrMenuActivity.this, "Mevcut Yolcu Üyelik ", Toast.LENGTH_SHORT).show();
                 }
                 if (position ==  2) {
-                    Toast.makeText(QrMenuActivity.this, "Twitter Description", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(QrMenuActivity.this, "Sisteme Girişi", Toast.LENGTH_SHORT).show();
+                    Intent loginQr = new Intent(QrMenuActivity.this,LoginActivity.class);
+                    startActivity(loginQr);
                 }
                 if (position ==  3) {
                     Toast.makeText(QrMenuActivity.this, "Karekod Description", Toast.LENGTH_SHORT).show();

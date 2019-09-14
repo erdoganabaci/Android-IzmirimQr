@@ -38,7 +38,8 @@
             tools:replace="android:screenOrientation" />
         <activity android:name=".QrMenuActivity" />
         <activity android:name=".MisafirYeniActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginQrCodeActivity"></activity>
     </application>
 
 </manifest>
