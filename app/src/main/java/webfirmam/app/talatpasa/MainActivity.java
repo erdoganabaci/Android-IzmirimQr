@@ -71,8 +71,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }else if (finalI == 3){
                         //qr kodları
-                        Intent intentQR = new Intent(MainActivity.this,QRActivity.class);
+
+                        Intent intentQR = new Intent(MainActivity.this,QrMenuActivity.class);
                         startActivity(intentQR);
+                        //Intent intentQR = new Intent(MainActivity.this,QRActivity.class);
+                        //startActivity(intentQR);
 
 
                     }else if (finalI == 4){
