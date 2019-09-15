@@ -16,57 +16,56 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class QrMenuActivity extends AppCompatActivity {
+public class EshotActivity extends AppCompatActivity {
     ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qr_menu);
-        listView = findViewById(R.id.listView);
+        setContentView(R.layout.activity_eshot);
 
-        String mTitle[] = {"Misafir/Yeni Yolcu Üyelik İşlemleri", "Mevcut Yolcu Üyelik İşlemleri", "Karekod ile Ödeme","Karekod Okuyucu İle Ödeme"};
+        listView = findViewById(R.id.listViewEshot);
+
+        String mTitle[] = {"OTOBÜS", "İZBAN", "VAPUR","İZMİR METRO"};
         //String mDescription[] = {"Facebook Description", "Whatsapp Description", "Twitter Description", "Instagram Description", "Youtube Description"};
-        int images[] = {R.drawable.misafiryolcu, R.drawable.mevcutyolcu, R.drawable.sistemegiris,R.drawable.sistemegiris};
+        int images[] = {R.drawable.bus, R.drawable.izban, R.drawable.vapur,R.drawable.metro};
         // so our images and other things are set in array
-        int imagesRigt[] = {R.drawable.misafiryolcu, R.drawable.mevcutyolcu, R.drawable.sistemegiris};
+        //int imagesRigt[] = {R.drawable.misafiryolcu, R.drawable.mevcutyolcu, R.drawable.sistemegiris};
 
 
-        MyAdapter adapter = new MyAdapter(this, mTitle, images);
+        EshotActivity.MyAdapter adapter = new EshotActivity.MyAdapter(this, mTitle, images);
         listView.setAdapter(adapter);
         // there is my mistake...
         // now again check this..
 
         // now set item click on list view
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            Intent intent = new Intent(EshotActivity.this,ActivityOne.class);
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position ==  0) {
-                    Toast.makeText(QrMenuActivity.this, "Misafir/Yeni Yolcu Üyelik İşlemleri", Toast.LENGTH_SHORT).show();
-                    Intent intentQR = new Intent(QrMenuActivity.this,MisafirYeni2Activity.class);
-                    startActivity(intentQR);
-                    //Intent intentQR = new Intent(QrMenuActivity.this,MisafirYeniActivity.class);
-                    //startActivity(intentQR);
+                    Toast.makeText(EshotActivity.this, "Otobüs Saatleri", Toast.LENGTH_LONG).show();
+                    intent.putExtra("info","https://www.eshot.gov.tr/UlasimKartlari.aspx");
+                    startActivity(intent);
+
                 }
                 if (position ==  1) {
-                    Toast.makeText(QrMenuActivity.this, "Mevcut Yolcu Üyelik ", Toast.LENGTH_SHORT).show();
-                    Intent intentQR = new Intent(QrMenuActivity.this,MevcutKartYeni2Activity.class);
-                    startActivity(intentQR);
+                    Toast.makeText(EshotActivity.this, "İzban Saatleri", Toast.LENGTH_SHORT).show();
+                    intent.putExtra("info","http://www.izban.com.tr/sayfalar/SeferSaatleri.aspx?MenuId=22");
+                    startActivity(intent);
+
                 }
                 if (position ==  2) {
-                    Toast.makeText(QrMenuActivity.this, "Sisteme Girişi", Toast.LENGTH_SHORT).show();
-                    Intent loginQr = new Intent(QrMenuActivity.this,Login2Activity.class);
-                    startActivity(loginQr);
-//                    Intent loginQr = new Intent(QrMenuActivity.this,LoginActivity.class);
-//                    startActivity(loginQr);
+                    Toast.makeText(EshotActivity.this, "Vapur Saatleri", Toast.LENGTH_SHORT).show();
+                    intent.putExtra("info","https://www.izdeniz.com.tr/(X(1)S(fxmhp5tnvefvpo3jk50t3bz3))/default.aspx?AspxAutoDetectCookieSupport=1");
+                    startActivity(intent);
                 }
                 if (position ==  3) {
 
-                    Toast.makeText(QrMenuActivity.this, "Karekod Okuyucu", Toast.LENGTH_SHORT).show();
-                    Intent loginQr = new Intent(QrMenuActivity.this,Login2QrActivity.class);
-                    startActivity(loginQr);
-//                    Intent loginQr = new Intent(QrMenuActivity.this,QRActivity.class);
-//                    startActivity(loginQr);
+                    Toast.makeText(EshotActivity.this, "İzmir Metro Saatleri", Toast.LENGTH_SHORT).show();
+                    intent.putExtra("info","https://www.izmirmetro.com.tr/SeferPlani/35");
+                    startActivity(intent);
                 }
 
             }
@@ -74,6 +73,7 @@ public class QrMenuActivity extends AppCompatActivity {
         // so item click is done now check list view
 
     }
+
 
     class MyAdapter extends ArrayAdapter<String> {
 
@@ -86,7 +86,7 @@ public class QrMenuActivity extends AppCompatActivity {
             super(c, R.layout.row, R.id.textView1, title);
             this.context = c;
             this.rTitle = title;
-           // this.rDescription = description;
+            // this.rDescription = description;
             this.rImgs = imgs;
 
         }
@@ -111,4 +111,5 @@ public class QrMenuActivity extends AppCompatActivity {
             return row;
         }
     }
+
 }

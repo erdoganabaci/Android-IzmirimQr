@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="45" />
+                                                <entry key="scalingPercent" value="42" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -34,8 +34,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="foregroundImage" value="C:\Users\Erdo\Desktop\gelincik uygulama\myappicon.png" />
+                                      <entry key="backgroundColor" value="202020" />
+                                      <entry key="foregroundImage" value="C:\Users\Erdo\Desktop\gelincik uygulama\versiyon 2\icons\talatlogo.jpg" />
                                     </map>
                                   </option>
                                 </PersistentState>

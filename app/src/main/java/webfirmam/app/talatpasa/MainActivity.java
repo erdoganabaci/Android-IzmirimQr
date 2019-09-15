@@ -61,10 +61,13 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this,ActivityOne.class);
 
                     if (finalI == 0){
-                        intent.putExtra("info","http://www.eshot.gov.tr/tr/UlasimSaatleri/288?AspxAutoDetectCookieSupport=1");
-                        startActivity(intent);
+                        //3 parçalı olcak izban otobüs vapur ayır
+                        Intent intentEshot = new Intent(MainActivity.this,EshotActivity.class);
+                        startActivity(intentEshot);
+                        //intent.putExtra("info","http://www.eshot.gov.tr/tr/UlasimSaatleri/288?AspxAutoDetectCookieSupport=1");
+                        //startActivity(intent);
                     }else if (finalI == 1){
-                        intent.putExtra("info","http://www.meb.gov.tr/");
+                        intent.putExtra("info","https://online.eshot.gov.tr/giris#TL_Yukle");
                         startActivity(intent);
                     }else if (finalI == 2){
                         intent.putExtra("info","https://online.eshot.gov.tr/giris?AspxAutoDetectCookieSupport=1#Bakiye_Sorgula");
@@ -79,6 +82,11 @@ public class MainActivity extends AppCompatActivity {
 
 
                     }else if (finalI == 4){
+                        Toast.makeText(getApplicationContext(),"Proje Hakkında",Toast.LENGTH_LONG).show();
+                        Intent intentQR = new Intent(MainActivity.this,AboutActivity.class);
+                        startActivity(intentQR);
+
+                    }else if (finalI == 5){
                         intent.putExtra("info","http://talatpasa.meb.k12.tr/");
                         startActivity(intent);
 

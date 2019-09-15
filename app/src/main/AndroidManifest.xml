@@ -39,7 +39,16 @@
         <activity android:name=".QrMenuActivity" />
         <activity android:name=".MisafirYeniActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".LoginQrCodeActivity"></activity>
+        <activity android:name=".LoginQrCodeActivity" />
+        <activity android:name=".MisafirYeni2Activity" />
+        <activity android:name=".MisafirYeni2OnayActivity" />
+        <activity android:name=".MevcutKartYeni2Activity" />
+        <activity android:name=".MevcutKartYeni2OnayActivity" />
+        <activity android:name=".Login2Activity" />
+        <activity android:name=".LoginQrOdemeActivity" />
+        <activity android:name=".Login2QrActivity" />
+        <activity android:name=".EshotActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>
