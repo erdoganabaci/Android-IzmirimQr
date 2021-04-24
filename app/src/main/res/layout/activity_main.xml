@@ -31,7 +31,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="11dp"
                 android:gravity="center"
-                android:text="TALATPAŞA ORTAOKULU"
+                android:text="AEKO"
                 android:textColor="#643A8C"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -300,12 +300,12 @@
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/talatpasa" />
+                    android:src="@drawable/mebaeko" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Talatpasa Ortaokulu"
+                    android:text="AEKO"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"

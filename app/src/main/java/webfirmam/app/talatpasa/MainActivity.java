@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intentQR);
 
                     }else if (finalI == 5){
-                        intent.putExtra("info","http://talatpasa.meb.k12.tr/");
+                        intent.putExtra("info","http://izmiraekoo.meb.k12.tr/");
                         startActivity(intent);
 
                     }
